@@ -1,0 +1,192 @@
+body {
+  background-color: #F7F8FA;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 600; 
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color:darkslategray;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li  {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.span--gray {
+  color: gray;
+}
+
+.container {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto 60px;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-radius: 15px;
+}
+
+.nav {
+  position: relative;
+  
+  width: 280px;
+  height: auto;
+  
+  background-color: #fff;
+  border-radius: 15px 0 0 15px;
+  border-right: 2px solid #E0E0E0;
+}
+
+.nav_inner {
+  position: sticky;
+  top: 0;
+  padding: 30px;
+  font-size: 16px;
+}
+
+.nav_list {
+  margin-bottom: 15px;
+}
+
+.nav_list-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.nav_list-text {
+  padding: 0 0 10px 15px;
+}
+
+.nav_list-text:last-child {
+  padding: 0 0 0 15px;
+}
+
+.nav_list-text a:hover {
+  color:steelblue;
+}
+
+.nav_list-text a:focus {
+  color:steelblue;
+}
+
+
+.content {
+  width: 1160px;
+  padding: 0 60px;
+  background-color: #fff;
+  border-radius: 0 15px 15px 0px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.section:last-child {
+  margin-bottom: 500px;
+}
+
+.section-title {
+  margin: 10px 0;
+  font-size: 21px;
+}
+
+.example {
+  padding: 20px;
+  border: 1px dashed gray;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.example_title {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.example_img {
+  display: block;
+  width: 500px;
+  height: 360px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.example_img.example_img-long {
+  width: auto;
+}
+
+.example_description {
+  padding: 0;
+}
+
+.example_list {
+  margin-bottom: 20px;
+}
+
+.example_list-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.example_list-title--gray {
+  margin: 15px 0 5px 0;
+  color: gray;
+}
+
+
+.example_list-text {
+  padding: 0 0 0 20px;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.example_list-text.example_list-nm {
+  margin-bottom: 5px;
+}
+
+.link {
+  color:steelblue;
+}
+
+b {
+  font-size: 15px;
+}
+
+pre code {
+  color: red;
+  font-size: 15px;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <title>Инсталлятор</title>
+    <link rel="icon" href="./img/settings.png">
+</head>
+<body>
+  <div class="container">
+    <div id="menu" class="nav">
+      <div class="nav_inner">
+        <ol class="nav_list">
+          <h4 class="nav_list-title"><a href="#title01">Установка на чистой ОС</a></h4>
+          <li class="nav_list-text"><a href="#text01">— NET Framework</a></li>
+          <li class="nav_list-text"><a href="#text02">— Cамоподписанный сертификат</a></li>
+          <li class="nav_list-text"><a href="#text03">— Два «cайта» на IIS</a></li>
+          <li class="nav_list-text"><a href="#text04">— Удаление Пассворк</a></li>
+        </ol>
+        <ol class="nav_list">
+          <h4 class="nav_list-title"><a href="#title02">Обновление Пассворк 4 → 5</a></h4>
+          <li class="nav_list-text"><a href="#text05">— Пассворк 4.7.1</a></li>
+          <li class="nav_list-text"><a href="#text06">— Предыдущая версия</a></li>
+          <li class="nav_list-text"><a href="#text07">— Различные названия</a></li>
+        </ol>
+        <ol class="nav_list">
+          <h4 class="nav_list-title"><a href="#title03">Обновление Пассворк 5.0.x</a></h4>
+          <li class="nav_list-text"><a href="#text08">— Ошибка обновления</a></li>
+          <li class="nav_list-text"><a href="#text09">— Файл «version»</a></li>
+          <li class="nav_list-text"><a href="#text10">— Удаление лицензии</a></li>
+        </ol>
+        <ol class="nav_list">
+          <h4 class="nav_list-title"><a href="#title04">Восстановление</a></h4>
+          <li class="nav_list-text"><a href="#text11">— Создание бэкапа</a></li>
+          <li class="nav_list-text"><a href="#text12">— Выбор резервных копий</a></li>
+        </ol>
+        <ol class="nav_list">
+          <h4 class="nav_list-title"><a href="#title05">Удобство пользования</a></h4>
+          <li class="nav_list-text"><a href="#text13">— Кнопка «назад»</a></li>
+          <li class="nav_list-text"><a href="#text14">— Cертификат из файла</a></li>
+        </ol>
+      </div>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h4 id="title01" class="section-title">Установка на чистой ОС</h4>
+        <div class="example">
+          <ul class="example_list">
+            <h4 id="text01" class="example_title">— NET Framework</h4>
+            <li class="example_list-text">Для установки требуется NET Framework не ниже 4.5</li>
+            <img class="example_img" src="img/Install01.png">      
+          </ul>
+          <ul class="example_list">
+            <h4 id="text02" class="example_title">— Cамоподписанный сертификат.</h4>
+            <li class="example_list-text example_list-nm">1. При установке был выбран самоподписанный сертификат.</li>
+            <li class="example_list-text example_list-nm">2. При нажатии на ярлык Пассворк откроется страница установки с портом <b>5353</b> — <a class="link" href="#">http://win-b14i5kjaut5.local<b>:5353</b></a></link></li>
+            <li class="example_list-text example_list-nm">3. В чек-листе будет отображено «HTTPS not used»</li>
+            <li class="example_list-text example_list-nm">4. Чтобы использовать HTTPS, можно сменить порт <b>5353</b> на <b>443</b> — <a class="link" href="#">http://win-b14i5kjaut5.local<b>:443</b></a><br>или указать протокол «HTTPS://» — <a class="link" href="#"><b>https:</b>//win-b14i5kjaut5.local</a></li>
+            <li class="example_list-text example_list-nm">5. В чек-листе будет отображен «HTTPS»</li>
+          </ul>
+          <ul class="example_list">
+            <h4 id="text03" class="example_title">— Два «cайта» на IIS</h4>
+            <img class="example_img example_img-long" src="img/webSites.png">      
+          </ul>
+          <h4 id="text04" class="example_title">— Удаление</h4>
+          <li class="example_list-text">При удалении через инсталлятор нет предложение о создание резервной копии файлов Пассворк.</b>.</li>
+          <li class="example_list-text">База данных остается, но удаляется файл <b>config.ini</b>.</li>
+        </ul>  
+      </div>
+    </div>
+    
+    <div class="section">
+      <h4 id="title02" class="section-title">Обновление Пассворк 4 → 5</h4>
+      <div class="example">
+        <ul class="example_list">
+            <h4 id="text05" class="example_title">— Пассворк 4.7.1</h4>
+            <li class="example_list-text">Обновление с версии 4.7.1 <b>(HTTP)</b> до 5.0.10 <b>(HTTPS)</b> прошло успешно.</li>
+        </ul>  
+        <ul class="example_list">
+          <h4 id="text06" class="example_title">— Файлы Пассворк из предыдущей версии</h4>
+          <li class="example_list-text">При обновлении файлы из предыдущей версии остаются в корне <b>/wwwroot</b>, новая версия расположена в дополнительной подпапке <b>/wwwroot/passwork</b>.</li>
+        </ul>  
+        <ul class="example_list">
+          <h4 id="text07" class="example_title">— Различные названия для Update и Upgrade</h4>
+          <li class="example_list-text">При выборе обновления чекбокс отображает «Update», а кнопка «Upgrade».</li>
+          <img class="example_img" src="img/updatePass.png">      
+        </ul>  
+      </div>
+    </div>
+    
+    <div class="section">
+      <h4 id="title03" class="section-title">Обновление Пассворк 5.0.x до 5.0.10</h4>
+      <div class="example">
+        <ul class="example_list">
+          <h4 id="text08" class="example_title">— Ошибка с лог-файлом</h4>
+          <li class="example_list-text">Если выбрать версию для обновления ниже 5.0.10, откроется лог-файл: 
+            <pre><code>Ttrying to get PW_PassworkDownloadLink<br>There is no version in C:\inetpub\wwwroot\passwork\version</code></pre>
+          </li>
+        </ul>  
+        <ul class="example_list">
+          <h4 id="text09" class="example_title">— Файл «version»</h4>
+          <li class="example_list-text">В предыдущих архивах Пассворк нет файла <b>«version»</b>. Содержимое файла — <b>050010</b></li>
+        </ul>  
+        <li class="example_list-text">Эту проблему можно решить, добавив в папку Пассворк файл <b>«version»</b>, изменив в нем версию с <b>050010</b> на <b>05000x</b> В результате обновление до версии 5.0.10 пройдет без ошибок.</li>
+        <ul class="example_list">
+          <h4 id="text10" class="example_title">— Файл лицензии</h4>
+          <li class="example_list-text">Файл лицензии <b>.keys</b> удаляется после обновления. Содержимое файла <b>config.ini</b> соответствует файлу предыдущей версии.</li>
+        </ul>  
+      </div>
+    </div>
+
+    <div class="section">
+      <h4 id="title04" class="section-title">Восстановление.</h4>
+      <div class="example">
+        <ul class="example_list">
+          <h4 id="text11" class="example_title">— Создание бэкапа</h4>
+          <li class="example_list-text">Если при обновлении Пассворк с версии 5.0.x было выбрано создание бэкапа, то в директории <b>C:\inetpub\wwwroot\</b> будет создана папка <b>backups</b>.</li>
+          <li class="example_list-text">Папка <b>backups</b> содержит базу данных <b>pwbox</b> и архив предыдущей версии Пассворк.</li>
+        </ul>  
+        <ul class="example_list">
+          <h4 id="text12" class="example_title">— Выбор резервных копий</h4>
+          <li class="example_list-text">Если при обновлении Пассворк с версии 5.0.x была выбрана резервная копия, то при восстановлении можно выбрать резервную копию из списка.</li>
+          <img class="example_img" src="img/installbckp.png">      
+        </ul>  
+      </div>
+    </div>
+
+    <div class="section">
+      <h4 id="title05" class="section-title">Удобство пользования</h4>
+      <div class="example">
+        <ul class="example_list">
+            <h4 id="text13" class="example_title">— Кнопка «назад»</h4>
+            <li class="example_list-text">Есть кнопка «Cancel». Было бы удобно вернуться к предыдущим шагам с помощью кнопки «back».</li>
+        </ul>  
+        <ul class="example_list">
+            <h4 id="text14" class="example_title">— Установить сертификат из файла</h4>
+            <li class="example_list-text">После установки Пассворк нет возможности установить сертификат из файла.</li>
+        </ul>  
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
